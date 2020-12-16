@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import 'src/_vars.scss';
+
 
 * {
   box-sizing: border-box;
@@ -14,8 +16,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $white;
   font-size: 14px;
   font-weight: 400;
+  background-color: $main-background;
 }
 
 code {
@@ -23,12 +27,7 @@ code {
     monospace;
 }
 
-// VARS
-$main-background: hsl(218, 28%, 13%);
-$footer-background: hsl(216, 53%, 9%);
-$secondary-background: hsl(217, 28%, 15%);
-$testimonial-background: hsl(219, 30%, 18%);
-$primary-color: hsl(176, 68%, 64%);
-$secondary-color: hsl(198, 60%, 50%);
-$error: hsl(0, 100%, 63%);
-$white: hsl(0, 0%, 100%);
+a {
+  text-decoration: none;
+  color: $white;
+}

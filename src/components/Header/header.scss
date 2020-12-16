@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 72px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &-item {
+    margin-left: 50px;
+
+    &:hover {
+      text-decoration: underline;
+      font-weight: 700;
+    }
+  }
+}
