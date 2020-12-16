@@ -19,7 +19,7 @@ body {
   color: $white;
   font-size: 14px;
   font-weight: 400;
-  background-color: $main-background;
+  background-color: $secondary-background;
 }
 
 code {
@@ -30,4 +30,8 @@ code {
 a {
   text-decoration: none;
   color: $white;
+}
+
+h2 {
+  font-size: 35px;
 }
