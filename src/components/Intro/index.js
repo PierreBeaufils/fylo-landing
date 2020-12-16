@@ -8,10 +8,12 @@ function Intro() {
     <div className="intro-container">
       <div className="intro">
         <img src={illustrationIntro} alt="logo" />
-        <h2>All your files in one secure location, accessible anywhere.</h2>
-        <p>Fylo stores all your most important files in one secure location.</p>
-        <p>Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
-        <button className="startedButton">Get Started</button>
+        <div className="intro-content">
+          <h2>All your files in one secure location, accessible anywhere.</h2>
+          <p>Fylo stores all your most important files in one secure location.</p>
+          <p>Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
+          <button className="startedButton">Get Started</button>
+        </div>
       </div>
     </div>
   );

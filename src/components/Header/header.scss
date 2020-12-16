@@ -1,11 +1,12 @@
 @import 'src/_vars.scss';
 
 .header {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 72px;
+  padding: 50px 72px;
 }
 
 .menu {
@@ -16,11 +17,24 @@
   align-items: center;
 
   &-item {
-    margin-left: 50px;
+    padding: 0 25px;
 
-    &:hover {
+    & a:hover {
       text-decoration: underline;
-      font-weight: 700;
     }
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+    padding: 5%;
+
+    & img {
+      width: 100px;
+    }
+  }
+
+  .menu-item {
+    padding: 0 10px;
   }
 }
