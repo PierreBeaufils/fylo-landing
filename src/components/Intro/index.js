@@ -1,7 +1,5 @@
 import './intro.scss';
 import illustrationIntro from '../../images/illustration-intro.png';
-import curvyDesktop from '../../images/bg-curvy-desktop.svg';
-import curvyMobile from '../../images/bg-curvy-mobile.svg';
 
 function Intro() {
   return (

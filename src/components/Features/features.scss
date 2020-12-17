@@ -10,7 +10,7 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 
@@ -19,8 +19,98 @@
   }
 
   &-item {
-    width: 300px;
+    flex-basis: auto;
+    max-width: 300px;
+    margin: 40px;
   }
+}
+
+.description {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  &-content {
+    max-width: 500px;
+    padding-left: 50px;
+
+    & p {
+      margin: 13px 0;
+    }
+
+    & a {
+      color: $primary-color;
+      position: relative;
+
+      &:hover {
+        color: $white;
+      }
+
+      &::after {
+        position: absolute;
+        left: 0;
+        top: 120%;
+        content: '';
+        height: 1px;
+        width: 100%;
+        background-color: $primary-color;
+      }
+
+      &:hover::after {
+        background-color: $white;
+      }
+
+      & img {
+        vertical-align: middle;
+        filter: invert(78%) sepia(65%) saturate(219%) hue-rotate(123deg) brightness(90%) contrast(94%);
+      }
+    }
+  }
+}
+
+.comments {
+  margin: 100px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  &-card {
+    position: relative;
+    max-width: 400px;
+    margin: 20px;
+    padding: 35px 20px 20px 20px;
+    border-radius: 5px;
+    background-color: $testimonial-background;
+    box-shadow: 7px 8px 23px 2px rgba(0, 0, 0, 0.32);
+    -webkit-box-shadow: 7px 8px 23px 2px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 7px 8px 23px 2px rgba(0, 0, 0, 0.32);
+
+    &-author {
+      margin-top: 25px;
+      display: flex;
+
+      & img {
+        border-radius: 50px;
+        margin-right: 10px;
+      }
+
+      & h4 {
+        font-weight: 700;
+      }
+
+      & p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+a:hover>img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(204deg) brightness(103%) contrast(102%);
 }
 
 @media (max-width: 375px) {
@@ -29,6 +119,21 @@
 
     &-item {
       width: 100%;
+      margin: 40px 0;
+    }
+  }
+
+  .description {
+    flex-flow: column wrap;
+
+    &>img {
+      width: 80%;
+    }
+
+    &-content {
+      padding-left: 0;
+      padding-top: 40px;
+      width: 80%;
     }
   }
 }
