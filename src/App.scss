@@ -1,3 +1,6 @@
+@import 'src/_vars.scss';
+
 .app {
   width: 100%;
+  background-color: $main-background;
 }

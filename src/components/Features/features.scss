@@ -72,18 +72,26 @@
 }
 
 .comments {
+  position: relative;
   margin: 100px 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 
+  &-card1::before {
+    content: url('../../images/bg-quotes.png');
+    position: absolute;
+    left: 0;
+    top: -30px;
+  }
+
   &-card {
     position: relative;
     max-width: 400px;
     margin: 20px;
     padding: 35px 20px 20px 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: $testimonial-background;
     box-shadow: 7px 8px 23px 2px rgba(0, 0, 0, 0.32);
     -webkit-box-shadow: 7px 8px 23px 2px rgba(0, 0, 0, 0.32);

@@ -211,6 +211,23 @@ p {
   line-height: 1.5;
 }
 
+.startedButton {
+  width: 230px;
+  padding: 15px 20px;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(159deg, hsl(176, 68%, 64%) 0%, hsl(198, 60%, 50%) 100%);
+  font-weight: 700;
+  font-family: 'Raleway';
+  cursor: pointer;
+  margin-top: 15px;
+
+  &:hover {
+    background: $primary-color;
+  }
+}
+
 @media (max-width: 650px) {
   h2 {
     font-size: 25px;
