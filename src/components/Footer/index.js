@@ -49,10 +49,6 @@ function Footer() {
           </div>
         </div>
       </div>
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Pierre Beaufils</a>.
-    </p>
     </footer>
   );
 }
