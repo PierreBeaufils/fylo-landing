@@ -29,17 +29,17 @@ function Footer() {
           </div>
           <div className="about footer-item">
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Press</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="/">About Us</a></li>
+              <li><a href="/">Jobs</a></li>
+              <li><a href="/">Press</a></li>
+              <li><a href="/">Blog</a></li>
             </ul>
           </div>
           <div className="infos footer-item">
             <ul>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
+              <li><a href="/">Contact Us</a></li>
+              <li><a href="/">Terms</a></li>
+              <li><a href="/">Privacy</a></li>
             </ul>
           </div>
           <div className="social footer-item">
